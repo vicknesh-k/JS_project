@@ -1,0 +1,92 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Fullscreen Background */
+body, html {
+  height: 100%;
+  background-image: url(./src/img1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Home Section with Background Image */
+.home-section {
+  background: url("images/bg.jpg") no-repeat center/cover;
+  height: 100vh;
+  position: relative;
+}
+
+/* Overlay for dark effect */
+.overlay {
+  background: rgba(0, 0, 0, 0.6);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Content Box */
+.content {
+  text-align: center;
+  color: #fff;
+  max-width: 600px;
+  padding: 40px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.3);
+}
+
+/* Title */
+.content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+.content h1 span {
+  color: #ffd700;
+}
+
+/* Paragraph */
+.content p {
+  font-size: 1.1rem;
+  margin-bottom: 25px;
+}
+
+/* Start Button */
+.start-btn {
+  padding: 12px 25px;
+  font-size: 1.1rem;
+  background-color: #ffd700;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.start-btn:hover {
+  background-color: #fff;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .content h1 {
+    font-size: 1.8rem;
+  }
+  .content p {
+    font-size: 1rem;
+  }
+  .start-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+}
